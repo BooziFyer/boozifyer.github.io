@@ -32,6 +32,7 @@
         .motto {
             font-size: 1.2em;
             margin-top: 10px;
+            animation: fadeIn 2s;
         }
 
         .container {
@@ -41,7 +42,11 @@
         }
 
         section {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
@@ -64,6 +69,14 @@
             margin: 10px 0;
             padding: 10px;
             font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            animation: slideIn 1.5s;
+        }
+
+        ul li img {
+            width: 50px;
+            margin-right: 10px;
         }
 
         footer {
@@ -71,6 +84,46 @@
             color: #ffd700;
             text-align: center;
             padding: 10px 0;
+        }
+
+        .section-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: fadeInUp 2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -87,14 +140,15 @@
         <div class="container">
             <h2>Our Services</h2>
             <ul>
-                <li>Penetration Testing</li>
-                <li>CTF (Capture The Flag) Platform</li>
-                <li>Technical Cybersecurity Assistance</li>
-                <li>CTF Challenges Development</li>
-                <li>CTF Hosting Services</li>
-                <li>Malware Analysis</li>
-                <li>Security Compliance Audits</li>
+                <li><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-penetration-testing-computer-security-flaticons-flat-flat-icons.png" alt="Penetration Testing Icon">Penetration Testing</li>
+                <li><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-capture-the-flag-military-justicon-lineal-color-justicon.png" alt="CTF Platform Icon">CTF (Capture The Flag) Platform</li>
+                <li><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-cybersecurity-technology-flaticons-flat-flat-icons.png" alt="Cybersecurity Assistance Icon">Technical Cybersecurity Assistance</li>
+                <li><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-challenge-business-organization-flaticons-lineal-color-flat-icons.png" alt="CTF Challenges Icon">CTF Challenges Development</li>
+                <li><img src="https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/000000/external-hosting-technology-itim2101-lineal-color-itim2101.png" alt="CTF Hosting Icon">CTF Hosting Services</li>
+                <li><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-malware-cybersecurity-flatart-icons-outline-flatarticons.png" alt="Malware Analysis Icon">Malware Analysis</li>
+                <li><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-audit-business-and-management-flaticons-flat-flat-icons.png" alt="Security Compliance Audits Icon">Security Compliance Audits</li>
             </ul>
+            <img src="https://via.placeholder.com/800x400.png?text=Cybersecurity+Image" alt="Cybersecurity" class="section-image">
         </div>
     </section>
 
@@ -102,11 +156,12 @@
         <div class="container">
             <h2>CSR Services</h2>
             <ul>
-                <li>Internships</li>
-                <li>Environmental Sustainability</li>
-                <li>Cyber Security Awareness Campaigns</li>
-                <li>Cyber Security Training and Workshops</li>
+                <li><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-internship-human-resources-flaticons-flat-flat-icons.png" alt="Internships Icon">Internships</li>
+                <li><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-sustainability-environment-justicon-lineal-color-justicon.png" alt="Environmental Sustainability Icon">Environmental Sustainability</li>
+                <li><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-campaign-marketing-and-advertisement-flatart-icons-outline-flatarticons.png" alt="Awareness Campaign Icon">Cyber Security Awareness Campaigns</li>
+                <li><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-workshop-business-flatart-icons-outline-flatarticons.png" alt="Workshops Icon">Cyber Security Training and Workshops</li>
             </ul>
+            <img src="https://via.placeholder.com/800x400.png?text=CSR+Image" alt="CSR" class="section-image">
         </div>
     </section>
 
@@ -114,11 +169,12 @@
         <div class="container">
             <h2>Meet the Team</h2>
             <ul>
-                <li>Syed Hassan Imam - Founder & CEO</li>
-                <li>Furqan Rafique - CMO & Co-Founder</li>
-                <li>Hameed Afridi - CTO & Co-Founder</li>
-                <li>Samia Sultana - COO</li>
+                <li><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-ceo-business-flatart-icons-outline-flatarticons.png" alt="CEO Icon">Syed Hassan Imam - Founder & CEO</li>
+                <li><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-marketing-business-flatart-icons-outline-flatarticons.png" alt="CMO Icon">Furqan Rafique - CMO & Co-Founder</li>
+                <li><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-cto-business-flatart-icons-outline-flatarticons.png" alt="CTO Icon">Hameed Afridi - CTO & Co-Founder</li>
+                <li><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-coo-business-flatart-icons-outline-flatarticons.png" alt="COO Icon">Samia Sultana - COO</li>
             </ul>
+            <img src="https://via.placeholder.com/800x400.png?text=Team+Image" alt="Team" class="section-image">
         </div>
     </section>
 
@@ -126,6 +182,7 @@
         <div class="container">
             <h2>Events</h2>
             <p>We've successfully completed one event: AirTech'24 CTF</p>
+            <img src="https://via.placeholder.com/800x400.png?text=Events+Image" alt="Events" class="section-image">
         </div>
     </section>
 
@@ -133,10 +190,11 @@
         <div class="container">
             <h2>Our Partners</h2>
             <ul>
-                <li>AICP (Artificial Intelligence Community of Pakistan)</li>
-                <li>Air University Islamabad</li>
-                <li>PU (Punjab University)</li>
+                <li><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-partnership-business-and-management-flaticons-flat-flat-icons.png" alt="Partners Icon">AICP (Artificial Intelligence Community of Pakistan)</li>
+                <li><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-university-education-flatart-icons-outline-flatarticons.png" alt="Air University Icon">Air University Islamabad</li>
+                <li><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-university-education-flatart-icons-outline-flatarticons.png" alt="PU Icon">PU (Punjab University)</li>
             </ul>
+            <img src="https://via.placeholder.com/800x400.png?text=Partners+Image" alt="Partners" class="section-image">
         </div>
     </section>
 
@@ -144,6 +202,7 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Phone: +92-313-5311012</p>
+            <img src="https://via.placeholder.com/800x400.png?text=Contact+Image" alt="Contact" class="section-image">
         </div>
     </section>
 
